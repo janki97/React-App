@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tabela{
+  border: 1px solid;
+  display: inline-block;
+}
+.forma{
+  
+  position: absolute;
+  bottom:0;
+
+}
+
+.dugmadBanka{
+
+  position: fixed;
+  bottom: 250px;
+  right: 550px;
+  
+
+}
+
+.veza{
+
+  margin-left:10px;
+  margin-right:10px;
+  font-size: larger;
+  color: rgb(98, 15, 94);
+  font: bold;
+}
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  tranform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+}
+
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+
+
+@keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 2s;
+}
+
+
+
+/*everything below here is just setting up the page, so dont worry about it */
+
+
+@media (min-width: 768px) {
+  .navbar{
+    text-align: center !important;
+    float: none;
+    display: inline-block;
+  }
+}
+
+body {
+  background-color: rgba(0,0,0,1);
+  font-weight:600;
+  text-align:center !important;
+  color: white;
+}
+
+nav {
+  background: none !important;
+  text-transform:uppercase;
+  
+}
+
+.page-title {
+  opacity: .75 !important;
+}
+
+
+.stavkeDugmad{
+  position: relative;
+  right: 50px;
+}
+
+.tabelaBanka{
+
+ position: fixed;
+  right: 50px;
+  left : 50px;
+
+}
+.tabelaUpit{
+ 
+ position: fixed;
+  right: 50px;
+  left : 50px;
+  
+}
+.dugmadUpit{
+
+  position: fixed;
+  bottom: 350px;
+  right: 550px;
+  
+ 
+}
+
+
