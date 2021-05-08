@@ -20,7 +20,7 @@
     "mysql2": "^2.1.0",
     "parser": "^0.1.4",
     "reflect": "^0.1.3",
-    "typeorm": "^0.2.24",
+    "typeorm": "^0.2.25",
     "typescript": "^3.8.3"
   }
 }
